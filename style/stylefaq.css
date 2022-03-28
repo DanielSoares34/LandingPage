@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    padding: 6rem;
+    font-family: Montserrat, sans-serif;
+    background-color: rgb(34 ,34, 34);
+    color: white;
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+details {
+    padding: 0 2rem;
+}
+
+details > summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.25rem;
+    cursor:pointer;
+    list-style: none;
+
+}
+details > summary::after {
+    content: url(arrowpng.png);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    transition: transform 0.3s ease;
+}
+
+details[open] > summary::after {
+    transform: rotate(90deg);
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.details-content {
+    font-size: 1rem;
+    padding: 2rem 2.5rem;
+}
+
+.details-content > p{
+    margin: 1rem 0;
+}
